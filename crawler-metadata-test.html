@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ============================================================
+       CRAWLER METADATA EXTRACTION TEST
+       Each value below is a unique SENTINEL. After crawling, search
+       each DLO field for its sentinel to learn what got extracted.
+       ============================================================ -->
+
+  <!-- Standard tags the crawler is DOCUMENTED to capture -->
+  <title>SENTINEL_TITLE_QX71 — Crawler Metadata Test Page</title>
+  <meta name="description" content="SENTINEL_DESCRIPTION_QX72 standard meta description field.">
+
+  <!-- CUSTOM tags — the open question. Does the crawler keep these? -->
+  <meta name="product" content="SENTINEL_PRODUCT_QX73">
+  <meta name="version" content="SENTINEL_VERSION_QX74">
+  <meta name="doc-type" content="SENTINEL_DOCTYPE_QX75">
+  <meta name="platform" content="SENTINEL_PLATFORM_QX76">
+  <meta name="last-updated" content="2026-06-15">
+  <meta name="keywords" content="SENTINEL_KEYWORDS_QX77">
+  <meta name="author" content="SENTINEL_AUTHOR_QX78">
+
+  <!-- Open Graph tags -->
+  <meta property="og:title" content="SENTINEL_OGTITLE_QX79">
+  <meta property="og:description" content="SENTINEL_OGDESC_QX80">
+  <meta property="og:type" content="article">
+
+  <!-- JSON-LD structured data (schema.org) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "name": "SENTINEL_JSONLD_NAME_QX81",
+    "version": "SENTINEL_JSONLD_VERSION_QX82",
+    "about": "SENTINEL_JSONLD_ABOUT_QX83",
+    "dateModified": "2026-06-15"
+  }
+  </script>
+</head>
+<body>
+  <h1>SENTINEL_H1_QX84 — Metadata Extraction Test</h1>
+
+  <p>SENTINEL_BODY_QX85 This paragraph is normal body text. The crawler
+  should always capture body content — this is the baseline that proves
+  the crawl reached the page at all.</p>
+
+  <h2>SENTINEL_H2_QX86 Section Heading</h2>
+  <p>Additional body text under a second-level heading, used to confirm
+  section-aware chunking picks up the heading structure.</p>
+
+  <!-- Sentinel inside a data attribute — unlikely to be captured, tests edge -->
+  <div data-product="SENTINEL_DATAATTR_QX87">Visible div text.</div>
+</body>
+</html>
